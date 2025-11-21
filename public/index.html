@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hackathon Starter — MongoDB + JWT</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-gray-900 text-white min-h-screen flex items-center justify-center">
+  <div class="max-w-2xl w-full p-6">
+    <h1 class="text-4xl font-bold mb-4">Hackathon Starter</h1>
+    <p class="mb-6 text-gray-300">MongoDB + JWT authentication demo</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div class="bg-gray-800 p-4 rounded">
+        <h2 class="font-semibold mb-2">Register</h2>
+        <input id="reg-name" placeholder="Name" class="input mb-2" />
+        <input id="reg-email" placeholder="Email" class="input mb-2" />
+        <input id="reg-pass" type="password" placeholder="Password" class="input mb-2" />
+        <button id="btn-register" class="btn">Register</button>
+      </div>
+
+      <div class="bg-gray-800 p-4 rounded">
+        <h2 class="font-semibold mb-2">Login</h2>
+        <input id="login-email" placeholder="Email" class="input mb-2" />
+        <input id="login-pass" type="password" placeholder="Password" class="input mb-2" />
+        <button id="btn-login" class="btn">Login</button>
+      </div>
+    </div>
+
+    <div class="mt-6 bg-gray-800 p-4 rounded">
+      <button id="btn-profile" class="btn mr-2">Get Protected Profile</button>
+      <button id="btn-api" class="btn">Public API</button>
+      <pre id="output" class="mt-4 p-2 bg-black rounded text-sm"></pre>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
